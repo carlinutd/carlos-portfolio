@@ -14,11 +14,11 @@ body{
 }
 
 .background{
-     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),url(messi2.jpg);
+    min-height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),url(fotos/united.jpg);
     background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 header{
@@ -37,7 +37,7 @@ h2.titulo{
 }
 
 h2.titulo span{
-    color: blue;
+    color: red;
 }
 
 .cabeçalho-link{
@@ -117,7 +117,7 @@ button:hover{
 }
 
 .text span{
-    color: blue;
+    color: darkgrey;
 }
 
 .text p{
@@ -133,17 +133,6 @@ button:hover{
     margin-top: 10px;
  }
 
- #insta{
-    margin-top: 10px;
-    color: pink;
-    background: transparent;
-    border: solid 1px pink;
-    padding: 2px;
-    border-radius: 10px;
-    width: 100px;
-    cursor: pointer;
- }
-
  #Sobre2{
     color: rgb(249, 248, 248);
  }
@@ -154,17 +143,48 @@ button:hover{
     
  }
 
- section.habilidades{
+.interface{
+    margin-top: 47px;
+}
+
+section.qualidades{
     margin-top: 85px;
     padding: 40px 4%;
     background-color: transparent;
+    position: relative;
+    padding: 39px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
 }
-
-section.habilidades .flex{
+section.qualidades .flex{
     gap: 60px;
+    display: flex;
 }
 
-.habilidades .especialidades-box{
-    color: #000000;
+.qualidades .qualidades-box{
+    color: red;
     padding: 40px;
+    border: 2px solid red;
+    border-radius: 20px;
+}
+
+.qualidades .qualidades i{
+    font-size: 65px;
+    color: darkgray;
+    position: relative;
+    top: 33px; 
+    padding-bottom: 2px;
+    
+}
+
+.qualidades .qualidades h3{
+    font-size: 26px;
+    margin: 15px 0;
+    color: darkgray;
+}
+.qualidades .qualidades p{
+    color: darkgrey;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 15px;
 }
