@@ -9,3 +9,4 @@ document.querySelectorAll('.nav-list a').forEach(function(item) {
         document.querySelector('.nav').classList.remove('active');
     });
 });
+
