@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.header {
+    background-color: rgba(82, 75, 87, 0.518);
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.hero { 
+    height: 100%;
+    background-image: linear-gradient(180deg, rgb(8, 8, 8), rgb(57, 57, 60));
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow-y: auto;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 1px solid rgb(42, 30, 155);
+    color: rgb(249, 249, 249);
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+#foto-oclin {
+    width: 500px; 
+    border-radius: 30%;
+    margin-left: 70%;
+    margin-top: -14%;
+}
+
+
+
+
+.nav {
+    max-width: 1280px;
+    height: 70px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+
+.nav-list a:hover {
+    color: #2ecc71;
+    transition: 0.3s all;
+}
+
+.nav-list li {
+    margin-left: 0; 
+}
+
+.nav-list a {
+    font-size: 18px;
+    color: #4c2a9c;
+    padding-block: 16px;
+    margin-bottom: 0ch;
+}
+
+.contato-link {
+    border: 2px solid rgba(8, 63, 90, 0.563); 
+    border-radius: 20px;
+    padding: 2px 5px; 
+    text-decoration: none;
+}
+
+.contato-link a:hover {
+    color: #c20c228f;
+    transition: 0.2s all;
+}
+
+.hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+}
+
+.hamburger::after,
+.hamburger::before {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+@media (max-width: 750px) {
+    .hamburger {
+        display: block;
+        z-index: 1;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        padding-top: 10px;
+        background: rgb(157, 129, 229);
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+
+    .nav-list a {
+        font-size: 24px;
+        opacity: 0;
+    }
+
+    .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+
+    .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+
+    .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+    }
+
+    .nav.active .nav-list {
+        clip-path: circle(1500px at 90% -15%);
+        pointer-events: all;
+    }
+
+    .nav.active .nav-list a {
+        opacity: 1;
+    }
+
+    .nav.active .hamburger {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: transparent;
+    }
+
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h2.titulo {
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: blue;
+}
+
+#Projeto {
+    color: white;
+    background: transparent;
+    cursor: pointer;
+}
+
+.container-text {
+    padding: 150px;
+}
+
+.text h3 {
+    color: #fff;
+    font-size: 15px;
+}
+
+.text h1 {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.text span {
+    color: rgb(35, 9, 113);
+}
+
+.text p {
+    color: #fdfefd;
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+
+.interface {
+    margin-top: 47px;
+    width: 100%; 
+    margin: auto; 
+}
+
+.qualidades .qualidades {
+    padding: 40px;
+    border: 2px solid rgb(72, 196, 122);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qualidades .qualidades:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(12, 30, 192, 0.3); 
+}
+
+section.qualidades {
+    padding: 50px 4%;
+    background-color: transparent;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+}
+
+section.qualidades .flex {
+    margin-top: 60px;
+    gap: 70px;
+    display: flex;
+    margin-left: 6%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.qualidades .qualidades i {
+    font-size: 80px;
+    color: rgb(223, 221, 234);
+}
+
+.qualidades .qualidades h3 {
+    font-size: 26px;
+    margin: 15px 0;
+    color: rgb(56, 15, 179);
+}
+
+.qualidades .qualidades p {
+    color: rgb(157, 165, 201);
+    font-size: 15px;
+}
+
+.projeto-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 20px;
+}
+
+.projeto-item {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    margin: 20px; 
+    transition: transform 0.3s;
+}
+
+.projeto-card {
+    background-color: #e3edf0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.projeto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(148, 5, 5, 0.2);
+}
+
+.projeto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #000000;
+}
+
+.projeto-info {
+    padding: 15px;
+}
+
+.projeto-info h3 {
+    font-size: 20px;
+    color: #0a0b0b;
+    margin-bottom: 10px;
+}
+
+.projeto-info p {
+    font-size: 14px;
+    color: #7f8c8d;
+}
